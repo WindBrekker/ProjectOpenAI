@@ -3,6 +3,7 @@ import os
 import sys
 import openai
 import logging
+from logging.handlers import RotatingFileHandler
 from dotenv import load_dotenv
 import utils
 
@@ -13,11 +14,19 @@ prompt = "prompt.txt"
 article = "article.txt"
 logging_file = "logs.log"
 
-logging.basicConfig(level=logging.INFO, filename=logging_file,
+rfhandler = RotatingFileHandler(
+    logging_file,
+    mode="a",
+    maxBytes=4096,
+    backupCount=1
+)
+logging.basicConfig(level=logging.INFO,
+                    handlers=[rfhandler],
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+####
+####
+
 logging.info("-------------------------------------------------Program started")
-
-
 load_dotenv()
 
 
@@ -33,6 +42,8 @@ else:
 
 #### Get response from OpenAI chatbot
 response = utils.send_to_chatbot(openai_api_key, prompt, article)
+
+print(response)
 
 
 
