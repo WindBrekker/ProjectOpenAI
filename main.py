@@ -43,7 +43,12 @@ else:
 #### Get response from OpenAI chatbot
 response = utils.send_to_chatbot(openai_api_key, prompt, article)
 
-print(response)
+#Save output to file
+with open("artykul.html", "w", encoding="utf-8") as file:
+    file.write(response)
+logging.info("Response saved to artykul.html")
+
+logging.info("-------------------------------------------------Program finished")
 
 
 
