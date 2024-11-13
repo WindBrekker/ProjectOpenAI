@@ -19,8 +19,7 @@ def send_to_chatbot(key, prompt_file, article_file):
     prompt_text = read_file(prompt_file)
     article_text = read_file(article_file)
 
-    full_prompt = prompt_text + "\n\n" + article_text
-
+    full_prompt = prompt_text + "\n\n\n\n" + article_text
 
 
     return full_prompt
