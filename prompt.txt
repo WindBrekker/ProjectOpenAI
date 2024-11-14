@@ -1,14 +1,14 @@
 Hello! Below is an article in Polish. I’ll use this text as filler content in the <body> section of my HTML file, so please format it accordingly. Here’s what I need:
 
 1. Add any missing Polish special characters.
-2. Divide the text into paragraphs, placing each paragraph in a separate <div> tag. Alternate the class names between “odd” and “even” for each <div>.
-3. Add an <img> tag after each paragraph, pointing to "image_placeholder.jpg".
-4. For each paragraph, create a creative prompt that matches the topic. This prompt will be used as the alt attribute for the <img> tag and should also be placed as a <figcaption> below the image.
-5. Split each <div> into two inner <div> sections:
-6. The first inner <div> should contain an <h2> for the paragraph title and a <p> for the text.
-7. The second inner <div> should contain the <img> and <figcaption>.
-8. Ensure each paragraph section includes an <h2> with the paragraph title, a <p> with the article text, an <img> tag with the generated prompt as the alt text, and a <figcaption> below each image.
-9. Exclude <html>, <head>, and <body> tags, as this content will be embedded in an existing HTML document.
+2. Divide the text into paragraphs, placing each paragraph in a separate <div> tag. Alternate the class names between “odd” and “even” for each <div>. Don't use any other classes.
+3. Exclude <html>, <head>, and <body> tags, as this content will be embedded in an existing HTML document and cannot contain them.
+4. Add an <img> tag after each paragraph, pointing to "image_placeholder.jpg".
+5. For each paragraph, create a creative prompt for image that matches the topic (it will be used to generate the image). This prompt will be used as the alt attribute for the <img> tag and should also be placed as a <figcaption> below the image.
+6. Split each <div> into two inner <div> sections:
+7. The first inner <div> should contain an <h2> for the paragraph title and a <p> for the text.
+8. The second inner <div> should contain the <img> and <figcaption>.
+9. Ensure each paragraph section includes an <h2> with the paragraph title, a <p> with the article text, an <img> tag with the generated prompt as the alt text, and a <figcaption> below each image. 
 10. If the last part of the article is short, format it as a footer instead of a regular <div> section.
 
 Thank you very much!
