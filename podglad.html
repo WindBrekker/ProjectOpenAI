@@ -67,7 +67,7 @@
     
     h2 {
         font-size: 1.5em;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -82,14 +82,52 @@
     .odd {
         display: flex;
         flex-direction: row;
-    
-    
+    }
+
+    .odd h2 {
+        text-align: left;
+        background-color: #000b3a;
+        padding-left: 3em;
+        padding: 0.5em;
+        margin-bottom: 3em;
+    }
+
+    .odd div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .odd p {
+        padding: 0 3em;
     }
     
     .even {
         display: flex;
         flex-direction: row-reverse;
         
+    }
+
+    .even h2 {
+        text-align: right;
+        background-color: #000b3a;
+        padding-right: 3em;
+        padding: 0.5em;
+        margin-bottom: 3em;
+    }
+
+    .even div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .even p {
+        padding: 0 3em;
     }
     
     footer {
